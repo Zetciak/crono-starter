@@ -28,7 +28,7 @@ const useStyles = makeStyles({
           },
           //900PX
           ['@media (max-width:900px)']: {
-            fontSize: '20px',
+            fontSize: '21px',
           },
         },
         // & li MEDIA QUERRIES
