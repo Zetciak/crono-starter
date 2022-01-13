@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 //Images
-import logo from '../../images/logo.svg';
+import logo from '../../public/images/logo.svg';
 
 //Icons
 import MenuIcon from '@material-ui/icons/MenuRounded';
