@@ -12,7 +12,11 @@
 html,
 body {
   overflow-x: hidden;
-  background-image: url('../public/images/background.png');
+  /* 
+    >>>>>>>>>>> Lokalnie to działa, vercel wyrzuca błąd - przywrócić jeżeli skrypt będzie po serwerze.
+    background-image: url('../public/images/background.png');
+  */
+  background-image: url('https://i.imgur.com/UP02XHP.png');
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
@@ -27,7 +31,11 @@ a {
 }
 
 .portal {
+  /* 
+    >>>>>>>>>>> Lokalnie to działa, vercel wyrzuca błąd - przywrócić jeżeli skrypt będzie po serwerze.
   background-image: url('../public/images/portal.webp');
+  */
+  background-image: url('https://i.imgur.com/yeSJhwU.png');
   height: 100%;
   width: 100%;
   left: 0;
