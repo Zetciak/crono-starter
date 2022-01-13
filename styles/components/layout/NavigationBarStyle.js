@@ -52,9 +52,9 @@ const useStyles = makeStyles({
       // & ul MEDIA QUERRIES
       //900PX
       ['@media (max-width:900px)']: {
-        position: 'fixed',
+        position: 'absolute',
         width: '100%',
-        height: '100%',
+        minHeight: '100vh',
         background: '#13162ff3',
         top: '115px',
         left: '0px',

@@ -1,7 +1,12 @@
 //Imports
 import { CssBaseline } from '@material-ui/core';
-import NavigationBar from '../components/layout/NavigationBar';
+import dynamic from 'next/dynamic';
 import { useEffect } from 'react';
+
+const NavigationBar = dynamic(
+  () => import('../components/layout/NavigationBar'),
+  { ssr: false }
+);
 
 //CSS
 import '../styles/globals.css';

@@ -14,6 +14,7 @@ body {
   overflow-x: hidden;
   /* 
     >>>>>>>>>>> Lokalnie to działa, vercel wyrzuca błąd - przywrócić jeżeli skrypt będzie po serwerze.
+    / Ewentualnie jeżeli to moja wina prosiłbym w feedbacku o wyjaśnienie.
     background-image: url('../public/images/background.png');
   */
   background-image: url('https://i.imgur.com/UP02XHP.png');
@@ -33,7 +34,8 @@ a {
 .portal {
   /* 
     >>>>>>>>>>> Lokalnie to działa, vercel wyrzuca błąd - przywrócić jeżeli skrypt będzie po serwerze.
-  background-image: url('../public/images/portal.webp');
+    / Ewentualnie jeżeli to moja wina prosiłbym w feedbacku o wyjaśnienie.
+    background-image: url('../public/images/portal.webp');
   */
   background-image: url('https://i.imgur.com/yeSJhwU.png');
   height: 100%;

@@ -2,6 +2,7 @@
 import { AppBar, Toolbar, Typography } from '@material-ui/core';
 import Image from 'next/image';
 import Link from 'next/link';
+import React, { useState, useEffect } from 'react';
 
 //Images
 import logo from '../../public/images/logo.svg';
@@ -14,7 +15,29 @@ import useStyles from '../../styles/components/layout/NavigationBarStyle';
 
 //Script
 function NavigationBar() {
+  //Styles
   const classes = useStyles();
+
+  //Nav responsive
+  const [showNav, setNavVisible] = useState(false);
+  const [screenW, setScreenW] = useState(window.innerWidth);
+
+  function changeNavVisible() {
+    setNavVisible(!showNav);
+  }
+
+  useEffect(() => {
+    function changeWidth() {
+      setScreenW(window.innerWidth);
+    }
+
+    window.addEventListener('resize', changeWidth);
+
+    return () => {
+      window.removeEventListener('resize', changeWidth);
+    };
+  }, []);
+
   return (
     <>
       <header>
@@ -24,29 +47,34 @@ function NavigationBar() {
               <div className={classes.logo}>
                 <Image src={logo} alt="Logo" />
               </div>
-              <div className={classes.navigationTypography}>
-                <ul>
-                  <li>
-                    <Link href="/">Main Page</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Projects</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Allocations</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Dashboard</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Buy $CROX</Link>
-                  </li>
-                  <li>
-                    <Link href="/contact">Contact</Link>
-                  </li>
-                </ul>
-              </div>
-              <MenuIcon className={classes.navBurger} />
+              {(showNav || screenW > 900) && (
+                <div className={classes.navigationTypography}>
+                  <ul>
+                    <li onClick={changeNavVisible}>
+                      <Link href="/">Main Page</Link>
+                    </li>
+                    <li onClick={changeNavVisible}>
+                      <Link href="#">Projects</Link>
+                    </li>
+                    <li onClick={changeNavVisible}>
+                      <Link href="#">Allocations</Link>
+                    </li>
+                    <li onClick={changeNavVisible}>
+                      <Link href="#">Dashboard</Link>
+                    </li>
+                    <li onClick={changeNavVisible}>
+                      <Link href="#">Buy $CROX</Link>
+                    </li>
+                    <li onClick={changeNavVisible}>
+                      <Link href="/contact">Contact</Link>
+                    </li>
+                  </ul>
+                </div>
+              )}
+              <MenuIcon
+                className={classes.navBurger}
+                onClick={changeNavVisible}
+              />
             </Toolbar>
           </AppBar>
         </nav>
