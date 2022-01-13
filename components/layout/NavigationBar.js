@@ -1,5 +1,5 @@
 //Imports
-import { AppBar, Toolbar, Typography } from '@material-ui/core';
+import { AppBar, Toolbar, Typography, Button } from '@material-ui/core';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
@@ -47,7 +47,7 @@ function NavigationBar() {
               <div className={classes.logo}>
                 <Image src={logo} alt="Logo" />
               </div>
-              {(showNav || screenW > 900) && (
+              {(showNav || screenW > 1200) && (
                 <div className={classes.navigationTypography}>
                   <ul>
                     <li onClick={changeNavVisible}>
@@ -71,6 +71,9 @@ function NavigationBar() {
                   </ul>
                 </div>
               )}
+              <Button className={classes.connectWallet}>
+                <Typography>Connect Wallet</Typography>
+              </Button>
               <MenuIcon
                 className={classes.navBurger}
                 onClick={changeNavVisible}

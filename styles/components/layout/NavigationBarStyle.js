@@ -8,6 +8,7 @@ const useStyles = makeStyles({
     borderBottom: '1px solid rgba(143, 155, 183, 0.5)',
     background: 'none',
   },
+
   navigationTypography: {
     color: '#ffffff',
     '& ul': {
@@ -26,14 +27,14 @@ const useStyles = makeStyles({
           '&:hover': {
             color: 'rgb(179, 179, 179)',
           },
-          //900PX
-          ['@media (max-width:900px)']: {
+          //1200PX
+          ['@media (max-width:1200px)']: {
             fontSize: '20px',
           },
         },
         // & li MEDIA QUERRIES
-        //900PX
-        ['@media (max-width:900px)']: {
+        //1200PX
+        ['@media (max-width:1200px)']: {
           display: 'block',
           padding: '0px',
           paddingBottom: '50px',
@@ -43,15 +44,15 @@ const useStyles = makeStyles({
         paddingLeft: '5px',
 
         // & li:nth-child(1) MEDIA QUERRIES
-        //900PX
-        ['@media (max-width:900px)']: {
+        //1200PX
+        ['@media (max-width:1200px)']: {
           paddingTop: '50px',
         },
       },
 
       // & ul MEDIA QUERRIES
-      //900PX
-      ['@media (max-width:900px)']: {
+      //1200PX
+      ['@media (max-width:1200px)']: {
         position: 'absolute',
         width: '100%',
         minHeight: '100vh',
@@ -75,9 +76,13 @@ const useStyles = makeStyles({
     ['@media (max-width:600px)']: {
       marginLeft: '50px',
     },
-    //900PX
-    ['@media (max-width:900px)']: {
+    //1200PX
+    ['@media (max-width:1200px)']: {
       marginTop: '26px',
+    },
+    //376PX
+    ['@media (max-width:376px)']: {
+      marginLeft: '15px',
     },
   },
 
@@ -95,14 +100,71 @@ const useStyles = makeStyles({
       fill: 'rgb(179, 179, 179)',
     },
     //MEDIA QUERRIES
-    //900PX
-    ['@media (max-width:900px)']: {
+    //1200PX
+    ['@media (max-width:1200px)']: {
       display: 'flex',
       marginTop: '26px',
     },
     //600PX
     ['@media (max-width:600px)']: {
       marginRight: '50px',
+    },
+    //376PX
+    ['@media (max-width:376px)']: {
+      marginRight: '15px',
+    },
+  },
+
+  connectWallet: {
+    //btn
+    padding: '12px 24px 14px',
+    background:
+      'linear-gradient(90deg, rgba(255, 255, 255, 0.048) 0%, rgba(0, 0, 0, 0.048) 48.02%, rgba(255, 255, 255, 0) 100%), #FFFFFF',
+    border: '1px solid rgba(255, 255, 255, 0.16)',
+    boxSizing: 'border-box',
+    borderRadius: '8px',
+    marginRight: '90px',
+    marginLeft: 'auto',
+    //hover
+    '&:hover': {
+      background:
+        'linear-gradient(90deg, rgba(255, 255, 255, 0.048) 0%, rgba(0, 0, 0, 0.048) 48.02%, rgba(255, 255, 255, 0) 100%), rgb(220, 220, 220)',
+    },
+    '& span': {
+      color: '#2e7eff',
+    },
+    //Text
+    '& p': {
+      fontFamily: "'Manrope', sans-serif",
+      fontStyle: 'normal',
+      fontWeight: '800',
+      fontSize: '16px',
+      letterSpacing: '-0.02em',
+      lineHeight: '22px',
+      color: '#070707',
+      textTransform: 'none',
+    },
+
+    //700PX
+    ['@media (max-width:700px)']: {
+      padding: '6px 12px 7px',
+      '& p': {
+        fontSize: '14px',
+      },
+    },
+
+    //376PX
+    ['@media (max-width:376px)']: {
+      padding: '4px 8px 5px',
+      '& p': {
+        fontSize: '10px',
+      },
+    },
+
+    //1200PX
+    ['@media (max-width:1200px)']: {
+      marginTop: '26px',
+      marginRight: '0',
     },
   },
 });
