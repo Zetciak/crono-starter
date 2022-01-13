@@ -5,6 +5,8 @@ import Link from 'next/link';
 
 //Images
 import logo from '../../public/images/logo.svg';
+import bg from '../../public/images/background.webp';
+import portal from '../../public/images/portal.webp';
 
 //Icons
 import MenuIcon from '@material-ui/icons/MenuRounded';
@@ -21,6 +23,8 @@ function NavigationBar() {
         <nav>
           <AppBar className={classes.appBar} elevation={0}>
             <Toolbar>
+              <Image src={bg} alt="Logo2" width="1" height="1" />
+              <Image src={portal} alt="Logo1" width="1" height="1" />
               <div className={classes.logo}>
                 <Image src={logo} alt="Logo" />
               </div>
