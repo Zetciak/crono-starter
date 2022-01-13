@@ -6,6 +6,10 @@ import { useEffect } from 'react';
 //CSS
 import '../styles/globals.css';
 
+//Images
+import bg from '../public/images/background.webp';
+import portal from '../public/images/portal.webp';
+
 //Script
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
