@@ -24,7 +24,7 @@ function NavigationBar() {
               <div className={classes.logo}>
                 <Image src={logo} alt="Logo" />
               </div>
-              <Typography className={classes.navigationTypography}>
+              <div className={classes.navigationTypography}>
                 <ul>
                   <li>
                     <Link href="/">Main Page</Link>
@@ -45,7 +45,7 @@ function NavigationBar() {
                     <Link href="/contact">Contact</Link>
                   </li>
                 </ul>
-              </Typography>
+              </div>
               <MenuIcon className={classes.navBurger} />
             </Toolbar>
           </AppBar>
