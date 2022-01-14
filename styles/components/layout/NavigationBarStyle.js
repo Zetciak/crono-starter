@@ -1,6 +1,7 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
+  //Top nav block
   appBar: {
     position: 'relative',
     width: '100%',
@@ -9,6 +10,7 @@ const useStyles = makeStyles({
     background: 'none',
   },
 
+  //Navigation elements
   navigationTypography: {
     color: '#ffffff',
     '& ul': {
@@ -27,65 +29,24 @@ const useStyles = makeStyles({
           '&:hover': {
             color: 'rgb(179, 179, 179)',
           },
-          //1200PX
-          ['@media (max-width:1200px)']: {
-            fontSize: '20px',
-          },
-        },
-        // & li MEDIA QUERRIES
-        //1200PX
-        ['@media (max-width:1200px)']: {
-          display: 'block',
-          padding: '0px',
-          paddingBottom: '50px',
         },
       },
       '& li:nth-child(1)': {
         paddingLeft: '5px',
-
-        // & li:nth-child(1) MEDIA QUERRIES
-        //1200PX
-        ['@media (max-width:1200px)']: {
-          paddingTop: '50px',
-        },
-      },
-
-      // & ul MEDIA QUERRIES
-      //1200PX
-      ['@media (max-width:1200px)']: {
-        position: 'absolute',
-        width: '100%',
-        minHeight: '100vh',
-        background: '#13162ff3',
-        top: '115px',
-        left: '0px',
-        textAlign: 'center',
-        padding: '0',
       },
     },
   },
 
+  //Logo
   logo: {
     marginTop: '-5px',
     marginLeft: '90px',
     float: 'left',
     minHeight: '48px',
     minWidth: '48px',
-    //MEDIA QUERRIES
-    //600PX
-    ['@media (max-width:600px)']: {
-      marginLeft: '50px',
-    },
-    //1200PX
-    ['@media (max-width:1200px)']: {
-      marginTop: '26px',
-    },
-    //376PX
-    ['@media (max-width:376px)']: {
-      marginLeft: '15px',
-    },
   },
 
+  //Responsive navigation button
   navBurger: {
     width: '30px',
     height: 'auto',
@@ -99,24 +60,10 @@ const useStyles = makeStyles({
     '&:hover': {
       fill: 'rgb(179, 179, 179)',
     },
-    //MEDIA QUERRIES
-    //1200PX
-    ['@media (max-width:1200px)']: {
-      display: 'flex',
-      marginTop: '26px',
-    },
-    //600PX
-    ['@media (max-width:600px)']: {
-      marginRight: '50px',
-    },
-    //376PX
-    ['@media (max-width:376px)']: {
-      marginRight: '15px',
-    },
   },
 
+  //Connect wallet button
   connectWallet: {
-    //btn
     padding: '12px 24px 14px',
     background:
       'linear-gradient(90deg, rgba(255, 255, 255, 0.048) 0%, rgba(0, 0, 0, 0.048) 48.02%, rgba(255, 255, 255, 0) 100%), #FFFFFF',
@@ -125,7 +72,6 @@ const useStyles = makeStyles({
     borderRadius: '8px',
     marginRight: '90px',
     marginLeft: 'auto',
-    //hover
     '&:hover': {
       background:
         'linear-gradient(90deg, rgba(255, 255, 255, 0.048) 0%, rgba(0, 0, 0, 0.048) 48.02%, rgba(255, 255, 255, 0) 100%), rgb(220, 220, 220)',
@@ -133,7 +79,6 @@ const useStyles = makeStyles({
     '& span': {
       color: '#0062ff',
     },
-    //Text
     '& p': {
       fontFamily: "'Manrope', sans-serif",
       fontStyle: 'normal',
@@ -144,27 +89,95 @@ const useStyles = makeStyles({
       color: '#070707',
       textTransform: 'none',
     },
+  },
 
-    //700PX
-    ['@media (max-width:700px)']: {
+  //<<<<<<<<<<<<<<<<<<<< Responsive scale
+  //1200 px
+  ['@media (max-width: 1200px)']: {
+    //Navigation elements
+    navigationTypography: {
+      '& ul': {
+        '& li': {
+          '& a': {
+            fontSize: '20px',
+          },
+          display: 'block',
+          padding: '0px',
+          paddingBottom: '50px',
+        },
+        '& li:nth-child(1)': {
+          paddingTop: '50px',
+        },
+        position: 'absolute',
+        width: '100%',
+        minHeight: '100vh',
+        background: '#13162ff3',
+        top: '115px',
+        left: '0px',
+        textAlign: 'center',
+        padding: '0',
+      },
+    },
+
+    //Logo
+    logo: {
+      marginTop: '26px',
+    },
+
+    //Responsive navigation button
+    navBurger: {
+      display: 'flex',
+      marginTop: '26px',
+    },
+
+    //Connect wallet button
+    connectWallet: {
+      marginTop: '26px',
+      marginRight: '0',
+    },
+  },
+
+  //700 px
+  ['@media (max-width: 700px)']: {
+    //Connect wallet button
+    connectWallet: {
       padding: '6px 12px 7px',
       '& p': {
         fontSize: '14px',
       },
     },
+  },
 
-    //376PX
-    ['@media (max-width:376px)']: {
-      padding: '4px 8px 5px',
+  //600 px
+  ['@media (max-width: 600px)']: {
+    //Logo
+    logo: {
+      marginLeft: '50px',
+    },
+
+    //Responsive navigation button
+    navBurger: {
+      marginRight: '50px',
+    },
+  },
+
+  //376 px
+  ['@media (max-width: 376px)']: {
+    //Logo
+    logo: {
+      marginLeft: '15px',
+    },
+
+    //Responsive navigation button
+    navBurger: {
+      marginRight: '15px',
+    },
+
+    //Connect wallet button
+    connectWallet: {
       '& p': {
         fontSize: '10px',
       },
-    },
-
-    //1200PX
-    ['@media (max-width:1200px)']: {
-      marginTop: '26px',
-      marginRight: '0',
     },
   },
 });

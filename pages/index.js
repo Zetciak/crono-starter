@@ -8,7 +8,7 @@ function HomePage() {
   const classes = useStyles();
   return (
     <>
-      <h1>Strona główna</h1>
+      <h1 className={classes.test2}>Strona główna</h1>
     </>
   );
 }

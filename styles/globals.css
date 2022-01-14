@@ -6,7 +6,6 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-  color: #fff;
 }
 
 html,
@@ -20,7 +19,6 @@ body {
   background-image: url('https://i.imgur.com/UP02XHP.png');
   background-repeat: no-repeat;
   background-size: cover;
-  color: #fff;
   min-height: 100vh;
   margin: 0;
   padding: 0;
@@ -48,6 +46,11 @@ a {
   mix-blend-mode: overlay;
   position: absolute;
   pointer-events: none;
+}
+
+.container {
+  margin-inline: auto;
+  width: min(100%, 120rem);
 }
 
 /* RESPONSIVE SCALE 1000px*/

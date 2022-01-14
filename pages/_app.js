@@ -1,12 +1,11 @@
 //Imports
 import { CssBaseline } from '@material-ui/core';
 import dynamic from 'next/dynamic';
-import { useEffect } from 'react';
-
 const NavigationBar = dynamic(
   () => import('../components/layout/NavigationBar'),
   { ssr: false }
 );
+import { useEffect } from 'react';
 
 //CSS
 import '../styles/globals.css';
@@ -21,12 +20,12 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
-    <>
+    <div className="container">
       <CssBaseline />
       <div className="portal"></div>
       <NavigationBar></NavigationBar>
       <Component {...pageProps} />
-    </>
+    </div>
   );
 }
 
