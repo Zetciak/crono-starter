@@ -41,7 +41,6 @@ const useStyles = makeStyles({
   logo: {
     marginTop: '-5px',
     marginLeft: '90px',
-    float: 'left',
     minHeight: '48px',
     minWidth: '48px',
   },
