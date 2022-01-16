@@ -73,7 +73,7 @@ const useStyles = makeStyles({
     marginLeft: 'auto',
     '&:hover': {
       background:
-        'linear-gradient(90deg, rgba(255, 255, 255, 0.048) 0%, rgba(0, 0, 0, 0.048) 48.02%, rgba(255, 255, 255, 0) 100%), rgb(220, 220, 220)',
+        'linear-gradient(90deg, rgba(255, 255, 255, 0.048) 0%, rgba(0, 0, 0, 0.048) 48.02%, rgba(255, 255, 255, 0) 100%), rgb(235, 235, 235)',
     },
     '& span': {
       color: '#0062ff',

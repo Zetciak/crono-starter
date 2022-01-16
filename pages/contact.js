@@ -8,7 +8,7 @@ function ContactPage() {
   const classes = useStyles();
   return (
     <>
-      <h1 className={classes.test2}>Kontakt</h1>
+      <h1 className={classes.test2}>Contact</h1>
     </>
   );
 }
