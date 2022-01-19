@@ -6,6 +6,7 @@ import {
   InputAdornment,
 } from '@material-ui/core';
 import Link from 'next/link';
+import { useState } from 'react';
 
 //CSS
 import useStyles from '../styles/components/BuySellCroxStyle';
@@ -16,11 +17,16 @@ import LockOpenOutlinedIcon from '@material-ui/icons/LockOpenOutlined';
 //Script
 function BuySellCrox() {
   const classes = useStyles();
-  let walletCroxAmount = 70.5;
+  const [walletCroxAmount, setWalletCroxAmount] = useState(70.5);
+  const [editBoxCroxAmount, setEditBoxCroxAmount] = useState('');
 
-  function setMaxCroxAmount() {
-    document.getElementById('numberEditBox').value = walletCroxAmount;
-  }
+  const setEboxAmount = (event) => {
+    setEditBoxCroxAmount(event.target.value);
+  };
+
+  const setMaxCroxAmount = () => {
+    setEditBoxCroxAmount(walletCroxAmount);
+  };
 
   return (
     <>
@@ -64,6 +70,8 @@ function BuySellCrox() {
               className={classes.numberEditBox}
               id="numberEditBox"
               autoComplete="off"
+              value={editBoxCroxAmount}
+              onChange={setEboxAmount}
               InputProps={{
                 disableUnderline: true,
                 endAdornment: (
