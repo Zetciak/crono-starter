@@ -109,7 +109,6 @@ const useStyles = makeStyles({
         },
         position: 'absolute',
         width: '100%',
-        minHeight: '100vh',
         background: '#13162ff3',
         top: '115px',
         left: '0px',

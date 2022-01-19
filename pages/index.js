@@ -1,6 +1,7 @@
 //Imports
 import TotalCroxPower from '../components/TotalCroxPower';
 import BuySellCrox from '../components/BuySellCrox';
+import Tiers from '../components/Tiers';
 
 //CSS
 import useStyles from '../styles/pages/IndexStyle';
@@ -14,6 +15,7 @@ function HomePage() {
         <TotalCroxPower />
         <BuySellCrox />
       </div>
+      <Tiers />
     </>
   );
 }

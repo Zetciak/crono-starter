@@ -5,7 +5,7 @@ const useStyles = makeStyles((theme) => ({
     color: 'white',
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'flex-start',
+    justifyContent: 'flex-end',
     marginLeft: 'auto',
     marginRight: '208px',
     width: '408px',
@@ -284,10 +284,17 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 
-  //1200px
-  ['@media (max-width: 1200px)']: {
+  //1250px
+  ['@media (max-width: 1250px)']: {
     buySellCrox: {
       marginRight: '50px',
+    },
+  },
+
+  //1150px
+  ['@media (max-width: 1150px)']: {
+    buySellCrox: {
+      marginRight: '30px',
     },
   },
 

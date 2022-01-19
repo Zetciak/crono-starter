@@ -80,10 +80,17 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 
-  //1200px
-  ['@media (max-width: 1200px)']: {
+  //1250px
+  ['@media (max-width: 1250px)']: {
     mainCroxPowerInfo: {
       marginLeft: '50px',
+    },
+  },
+
+  //1150px
+  ['@media (max-width: 1150px)']: {
+    mainCroxPowerInfo: {
+      marginLeft: '30px',
     },
   },
 
