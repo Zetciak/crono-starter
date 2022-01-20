@@ -2,6 +2,7 @@
 import TotalCroxPower from '../components/TotalCroxPower';
 import BuySellCrox from '../components/BuySellCrox';
 import Tiers from '../components/Tiers';
+import ApplicationsTable from '../components/ApplicationsTable';
 
 //CSS
 import useStyles from '../styles/pages/IndexStyle';
@@ -16,6 +17,7 @@ function HomePage() {
         <BuySellCrox />
       </div>
       <Tiers />
+      <ApplicationsTable />
     </>
   );
 }

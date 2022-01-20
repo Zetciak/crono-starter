@@ -2,9 +2,8 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   tiersDiv: {
-    marginLeft: '208px',
-    marginRight: '208px',
-    width: 'auto',
+    width: '1024px',
+    margin: '0 auto',
   },
 
   tiersTitleTypography: {
@@ -327,33 +326,6 @@ const useStyles = makeStyles((theme) => ({
   },
 
   //<<<<<<<<<<<<<<<<<<<< Responsive scale
-  //1440px
-  ['@media (max-width: 1440px)']: {
-    tiersDiv: {
-      marginLeft: '100px',
-      marginRight: '100px',
-      width: 'auto',
-    },
-  },
-
-  //1250px
-  ['@media (max-width: 1250px)']: {
-    tiersDiv: {
-      marginLeft: '50px',
-      marginRight: '50px',
-      width: 'auto',
-    },
-  },
-
-  //1150px
-  ['@media (max-width: 1150px)']: {
-    tiersDiv: {
-      marginLeft: '30px',
-      marginRight: '30px',
-      width: 'auto',
-    },
-  },
-
   //1100px
   ['@media (max-width: 1100px)']: {
     tiersDiv: {
