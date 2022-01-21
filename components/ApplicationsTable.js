@@ -83,14 +83,24 @@ function ApplicationsTable() {
     drawAppList.push(
       <div key={i}>
         <tr className={classes.trEelement}>
-          <td className={`${classes.tableStyle112} ${classes.textAlignLeft}`}>
-            <Typography>{appList[i].projectName}</Typography>
+          <td>
+            <Typography
+              className={`${classes.tableElement111} ${classes.textAlignLeft}`}
+            >
+              {appList[i].projectName}
+            </Typography>
           </td>
-          <td className={`${classes.tableStyle112} ${classes.textAlignLeft}`}>
-            <Typography>{appList[i].startIDO}</Typography>
+          <td>
+            <Typography
+              className={`${classes.tableElement111} ${classes.textAlignLeft}`}
+            >
+              {appList[i].startIDO}
+            </Typography>
           </td>
-          <td className={`${classes.tableStyle100} ${classes.textAlignLeft}`}>
-            <Typography className={classes.tableHref}>
+          <td>
+            <Typography
+              className={`${classes.tableElement99} ${classes.textAlignLeft} ${classes.tableHref}`}
+            >
               <a href={appList[i].detailsHref}>
                 Research
                 <div className={classes.hrefImage}>
@@ -99,8 +109,10 @@ function ApplicationsTable() {
               </a>
             </Typography>
           </td>
-          <td className={`${classes.tableStyle100} ${classes.textAlignLeft}`}>
-            <Typography className={classes.tableHref}>
+          <td>
+            <Typography
+              className={`${classes.tableElement99} ${classes.textAlignLeft} ${classes.tableHref}`}
+            >
               <a href={appList[i].vestingHref}>
                 Overview
                 <div className={classes.hrefImage}>
@@ -109,14 +121,26 @@ function ApplicationsTable() {
               </a>
             </Typography>
           </td>
-          <td className={`${classes.tableStyle100} ${classes.textAlignRight}`}>
-            <Typography>{priceToken}$</Typography>
+          <td>
+            <Typography
+              className={`${classes.tableElement99} ${classes.textAlignRight}`}
+            >
+              {priceToken}$
+            </Typography>
           </td>
-          <td className={`${classes.tableStyle100} ${classes.textAlignRight}`}>
-            <Typography>{allocation}$</Typography>
+          <td>
+            <Typography
+              className={`${classes.tableElement99} ${classes.textAlignRight}`}
+            >
+              {allocation}$
+            </Typography>
           </td>
-          <td className={`${classes.tableStyle100} ${classes.textAlignRight}`}>
-            <Typography>{tokens}</Typography>
+          <td>
+            <Typography
+              className={`${classes.lastTableElement99} ${classes.textAlignRight}`}
+            >
+              {tokens}
+            </Typography>
           </td>
         </tr>
         {i + 1 === appList.length ? null : (
@@ -130,39 +154,61 @@ function ApplicationsTable() {
     <>
       <div className={classes.applicationsTableDiv}>
         <Typography className={classes.mainTitle}>Your Applications</Typography>
-        <div className={classes.horizontalLine}></div>
+        <div className={classes.horizontalLineTop}></div>
         <table className={classes.tableTitles}>
-          <tr>
-            <th className={`${classes.tableStyle112} ${classes.textAlignLeft}`}>
-              <Typography>Project Name</Typography>
-            </th>
-            <th className={`${classes.tableStyle112} ${classes.textAlignLeft}`}>
-              <Typography>Start IDO Date</Typography>
-            </th>
-            <th className={`${classes.tableStyle100} ${classes.textAlignLeft}`}>
-              <Typography>Details</Typography>
-            </th>
-            <th className={`${classes.tableStyle100} ${classes.textAlignLeft}`}>
-              <Typography>Vesting</Typography>
-            </th>
-            <th
-              className={`${classes.tableStyle100} ${classes.textAlignRight}`}
-            >
-              <Typography>Price Token</Typography>
-            </th>
-            <th
-              className={`${classes.tableStyle100} ${classes.textAlignRight}`}
-            >
-              <Typography>Allocation</Typography>
-            </th>
-            <th
-              className={`${classes.tableStyle100} ${classes.textAlignRight}`}
-            >
-              <Typography>Tokens</Typography>
-            </th>
+          <tr className={classes.trEelement}>
+            <td>
+              <Typography
+                className={`${classes.tableElement111} ${classes.textAlignLeft}`}
+              >
+                Project Name
+              </Typography>
+            </td>
+            <td>
+              <Typography
+                className={`${classes.tableElement111} ${classes.textAlignLeft}`}
+              >
+                Start IDO Date
+              </Typography>
+            </td>
+            <td>
+              <Typography
+                className={`${classes.tableElement99} ${classes.textAlignLeft} ${classes.tableHref}`}
+              >
+                Details
+              </Typography>
+            </td>
+            <td>
+              <Typography
+                className={`${classes.tableElement99} ${classes.textAlignLeft} ${classes.tableHref}`}
+              >
+                Vesting
+              </Typography>
+            </td>
+            <td>
+              <Typography
+                className={`${classes.tableElement99} ${classes.textAlignRight}`}
+              >
+                Price Token
+              </Typography>
+            </td>
+            <td>
+              <Typography
+                className={`${classes.tableElement99} ${classes.textAlignRight}`}
+              >
+                Allocation
+              </Typography>
+            </td>
+            <td>
+              <Typography
+                className={`${classes.lastTableElement99} ${classes.textAlignRight}`}
+              >
+                Tokens
+              </Typography>
+            </td>
           </tr>
         </table>
-        <div className={classes.horizontalLine}></div>
+        <div className={classes.horizontalLineTop}></div>
         <table className={classes.tableElements}>{drawAppList}</table>
       </div>
     </>

@@ -9,6 +9,7 @@ const useStyles = makeStyles((theme) => ({
     border: '1px solid #2A2D44',
     boxSizing: 'border-box',
     borderRadius: '16px',
+    overflowX: 'auto',
   },
 
   mainTitle: {
@@ -23,6 +24,12 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: '34px',
   },
 
+  horizontalLineTop: {
+    height: '1px',
+    width: '100%',
+    background: '#2A2D44',
+  },
+
   horizontalLine: {
     height: '1px',
     width: '100%',
@@ -30,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   tableTitles: {
-    margin: '20px 24px 24px 24px',
+    margin: '0px 24px 0px 24px',
     width: 'calc(100% - 48px)',
     fontFamily: "'Manrope', sans-serif",
     fontStyle: 'normal',
@@ -42,14 +49,6 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 
-  tableStyle112: {
-    width: '11%',
-  },
-
-  tableStyle100: {
-    width: '9.5%',
-  },
-
   textAlignLeft: {
     textAlign: 'left',
   },
@@ -59,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   tableElements: {
-    margin: '8px 24px 20px 24px',
+    margin: '5px 24px 10px 24px',
     width: 'calc(100% - 48px)',
     fontFamily: "'Manrope', sans-serif",
     fontStyle: 'normal',
@@ -78,6 +77,7 @@ const useStyles = makeStyles((theme) => ({
 
   tableHref: {
     '& a': {
+      opacity: 1,
       transition: 'opacity .5s',
     },
     '& a:hover': {
@@ -91,6 +91,26 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: '16px',
   },
 
+  tableElement111: {
+    width: '111px',
+    height: '24px',
+    marginRight: '41px',
+    overflow: 'hidden',
+  },
+
+  tableElement99: {
+    width: '99px',
+    height: '24px',
+    marginRight: '41px',
+    overflow: 'hidden',
+  },
+
+  lastTableElement99: {
+    width: '99px',
+    height: '24px',
+    overflow: 'hidden',
+  },
+
   //<<<<<<<<<<<<<<<<<<<< Responsive scale
   //1100px
   ['@media (max-width: 1100px)']: {
@@ -99,54 +119,8 @@ const useStyles = makeStyles((theme) => ({
       margin: '0 auto',
       marginTop: '150px',
     },
-  },
-
-  //975px
-  ['@media (max-width: 975px)']: {
-    tableTitles: {
-      '& p': {
-        fontSize: '15px',
-      },
-    },
-
-    tableElements: {
-      '& p': {
-        fontSize: '15px',
-      },
-    },
-  },
-
-  //875px
-  ['@media (max-width: 875px)']: {
-    tableTitles: {
-      margin: '15px 24px 15px 24px',
-      '& p': {
-        fontSize: '13px',
-      },
-    },
-
-    tableElements: {
-      margin: '2px 24px 10px 24px',
-      '& p': {
-        fontSize: '13px',
-      },
-    },
-  },
-
-  //775px
-  ['@media (max-width: 775px)']: {
-    tableTitles: {
-      margin: '10px 24px 10px 24px',
-      '& p': {
-        fontSize: '11px',
-      },
-    },
-
-    tableElements: {
-      margin: '0 24px 5px 24px',
-      '& p': {
-        fontSize: '11px',
-      },
+    horizontalLineTop: {
+      width: '1024px',
     },
   },
 }));
