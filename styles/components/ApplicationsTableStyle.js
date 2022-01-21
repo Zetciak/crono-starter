@@ -123,6 +123,13 @@ const useStyles = makeStyles((theme) => ({
       width: '1024px',
     },
   },
+
+  //1090px
+  ['@media (max-width: 1090px)']: {
+    applicationsTableDiv: {
+      overflowX: 'scroll',
+    },
+  },
 }));
 
 export default useStyles;
