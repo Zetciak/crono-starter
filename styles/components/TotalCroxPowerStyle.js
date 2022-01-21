@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
   mainCroxPowerInfo: {
     color: '#ffffff',
-    marginLeft: '208px',
+    //marginLeft: '208px',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'flex-start',
@@ -76,21 +76,21 @@ const useStyles = makeStyles((theme) => ({
   //1440px
   ['@media (max-width: 1440px)']: {
     mainCroxPowerInfo: {
-      marginLeft: '100px',
+      //marginLeft: '100px',
     },
   },
 
   //1250px
   ['@media (max-width: 1250px)']: {
     mainCroxPowerInfo: {
-      marginLeft: '50px',
+      //marginLeft: '50px',
     },
   },
 
   //1150px
   ['@media (max-width: 1150px)']: {
     mainCroxPowerInfo: {
-      marginLeft: '30px',
+      //marginLeft: '30px',
     },
   },
 

@@ -2,9 +2,10 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   mainFirstGrid: {
-    marginTop: '48px',
     display: 'flex',
-    width: '100%',
+    width: '1024px',
+    margin: '0 auto',
+    marginTop: '48px',
   },
 
   //<<<<<<<<<<<<<<<<<<<< Responsive scale

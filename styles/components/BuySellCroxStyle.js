@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     justifyContent: 'flex-end',
     marginLeft: 'auto',
-    marginRight: '208px',
+    //marginRight: '208px',
     width: '408px',
   },
 
@@ -280,21 +280,21 @@ const useStyles = makeStyles((theme) => ({
   //1440px
   ['@media (max-width: 1440px)']: {
     buySellCrox: {
-      marginRight: '100px',
+      //marginRight: '100px',
     },
   },
 
   //1250px
   ['@media (max-width: 1250px)']: {
     buySellCrox: {
-      marginRight: '50px',
+      //marginRight: '50px',
     },
   },
 
   //1150px
   ['@media (max-width: 1150px)']: {
     buySellCrox: {
-      marginRight: '30px',
+      //marginRight: '30px',
     },
   },
 

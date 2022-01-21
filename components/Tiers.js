@@ -238,7 +238,7 @@ function Tiers() {
                 style={{
                   marginLeft: `calc(${countWidthToAdd}px - ${
                     width / 2
-                  }px + 21px)`,
+                  }px + 20px)`,
                 }}
               >
                 <Typography className={classes.bottomPolsText}>

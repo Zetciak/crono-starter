@@ -1,7 +1,7 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
-  applicationsTableDiv: {
+  depositTableDiv: {
     width: '1024px',
     margin: '0 auto',
     marginTop: '128px',
@@ -49,14 +49,6 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 
-  textAlignLeft: {
-    textAlign: 'left',
-  },
-
-  textAlignRight: {
-    textAlign: 'right',
-  },
-
   tableElements: {
     margin: '5px 24px 10px 24px',
     width: 'calc(100% - 48px)',
@@ -70,52 +62,89 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 
-  hrefImage: {
-    display: 'inline',
-    marginLeft: '10px',
-  },
-
-  tableHref: {
-    '& a': {
-      color: 'white',
-      opacity: 1,
-      transition: 'opacity .5s',
-    },
-    '& a:hover': {
-      opacity: 0.8,
-    },
-  },
-
   trEelement: {
     display: 'block',
     marginTop: '16px',
     marginBottom: '16px',
   },
 
-  tableElement111: {
-    width: '111px',
+  textAlignLeft: {
+    textAlign: 'left',
+  },
+
+  textAlignRight: {
+    textAlign: 'right',
+  },
+
+  tableElement160: {
+    width: '160px',
     height: '24px',
-    marginRight: '41px',
+    marginRight: '56px',
     overflow: 'hidden',
   },
 
   tableElement99: {
     width: '99px',
     height: '24px',
-    marginRight: '41px',
+    marginRight: '86px',
     overflow: 'hidden',
   },
 
-  lastTableElement99: {
-    width: '99px',
-    height: '24px',
+  tableElement196: {
+    width: '196px',
+    height: '100%',
     overflow: 'hidden',
+  },
+
+  buttonsDiv: {
+    display: 'flex',
+    justifyContent: 'flex-end',
+    '& p': {
+      fontFamily: "'Manrope', sans-serif",
+      fontStyle: 'normal',
+      fontWeight: '500',
+      fontSize: '14px',
+      lineHeight: '20px',
+      color: '#ffffff',
+      textTransform: 'none',
+    },
+  },
+
+  depositBtn: {
+    width: '84px',
+    height: '36px',
+    marginRight: '16px',
+    background:
+      'linear-gradient(90deg, rgba(255, 255, 255, 0.048) 0%, rgba(0, 0, 0, 0.048) 48.02%, rgba(255, 255, 255, 0) 100%), #3C42F5',
+    border: '1px solid rgba(255, 255, 255, 0.16)',
+    borderRadius: '8px',
+
+    '&:hover': {
+      background:
+        'linear-gradient(90deg, rgba(255, 255, 255, 0.048) 0%, rgba(0, 0, 0, 0.048) 48.02%, rgba(255, 255, 255, 0) 100%), #4349fa',
+      border: '1px solid rgba(255, 255, 255, 0.16)',
+    },
+  },
+
+  buyCroxBtn: {
+    width: '96px',
+    height: '36px',
+    background:
+      'linear-gradient(90deg, rgba(255, 255, 255, 0.048) 0%, rgba(0, 0, 0, 0.048) 48.02%, rgba(255, 255, 255, 0) 100%), #20233B',
+    border: '1px solid rgba(255, 255, 255, 0.16)',
+    borderRadius: '8px',
+
+    '&:hover': {
+      background:
+        'linear-gradient(90deg, rgba(255, 255, 255, 0.048) 0%, rgba(0, 0, 0, 0.048) 48.02%, rgba(255, 255, 255, 0) 100%), #272b47',
+      border: '1px solid rgba(255, 255, 255, 0.16)',
+    },
   },
 
   //<<<<<<<<<<<<<<<<<<<< Responsive scale
   //1100px
   ['@media (max-width: 1100px)']: {
-    applicationsTableDiv: {
+    depositTableDiv: {
       width: '95%',
       margin: '0 auto',
       marginTop: '150px',
@@ -133,8 +162,8 @@ const useStyles = makeStyles((theme) => ({
 
   //1026px
   ['@media (max-width: 1026px)']: {
-    applicationsTableDiv: {
-      marginTop: '0px',
+    depositTableDiv: {
+      marginTop: '50px',
     },
   },
 
