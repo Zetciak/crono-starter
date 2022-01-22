@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
   //1100px
   ['@media (max-width: 1100px)']: {
     mainFirstGrid: {
+      width: '100%',
       flexDirection: 'column',
     },
   },
