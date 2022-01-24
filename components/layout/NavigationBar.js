@@ -17,6 +17,7 @@ import useStyles from '../../styles/components/layout/NavigationBarStyle';
 function NavigationBar() {
   //Styles
   const classes = useStyles();
+  const [backgroundColor, setBackgroundColor] = useState('#ffffff00');
 
   //Nav responsive
   const [showNav, setNavVisible] = useState(false);
@@ -38,11 +39,34 @@ function NavigationBar() {
     };
   }, []);
 
+  useEffect(() => {
+    function changeBgScroll() {
+      if (window.scrollY === 0) {
+        setBackgroundColor('#ffffff00');
+      } else {
+        setBackgroundColor('#13162ff3');
+      }
+    }
+
+    window.addEventListener('scroll', changeBgScroll);
+
+    return () => {
+      window.removeEventListener('scroll', changeBgScroll);
+    };
+  }, []);
+
   return (
     <>
       <header>
         <nav>
-          <AppBar className={classes.appBar} elevation={0}>
+          <AppBar
+            className={classes.appBar}
+            id="appBar"
+            style={{
+              background: `${backgroundColor}`,
+            }}
+            elevation={0}
+          >
             <Toolbar>
               <div className={classes.logo}>
                 <Image src={logo} alt="Logo" />

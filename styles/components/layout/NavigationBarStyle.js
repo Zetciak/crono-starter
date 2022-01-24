@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles({
   //Top nav block
   appBar: {
-    position: 'relative',
+    position: 'fixed',
     width: '100%',
     height: '115px',
     borderBottom: '1px solid rgba(143, 155, 183, 0.5)',
@@ -109,6 +109,7 @@ const useStyles = makeStyles({
         },
         position: 'absolute',
         width: '100%',
+        height: '100vh',
         background: '#13162ff3',
         top: '115px',
         left: '0px',

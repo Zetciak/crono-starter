@@ -5,7 +5,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     width: '1024px',
     margin: '0 auto',
-    marginTop: '48px',
+    marginTop: '148px',
   },
 
   //<<<<<<<<<<<<<<<<<<<< Responsive scale
