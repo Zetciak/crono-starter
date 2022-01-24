@@ -19,3 +19,5 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default useStyles;
+
+///OD GÓRY W SENSIE > 1440PX COS ZROBIC ZE NA BOKI BARDZIEJ OK?

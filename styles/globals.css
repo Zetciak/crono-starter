@@ -54,6 +54,15 @@ a {
   width: min(100%, 120rem);
 }
 
+div ::-webkit-scrollbar {
+  height: 10px;
+}
+
+div ::-webkit-scrollbar-thumb {
+  background-color: #393e5f;
+  border-radius: 20px;
+}
+
 /* RESPONSIVE SCALE 1000px*/
 @media screen and (max-width: 1000px) {
   .portal {
