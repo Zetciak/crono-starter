@@ -10,6 +10,12 @@ const useStyles = makeStyles({
     background: 'none',
   },
 
+  //Width limit div
+  toolBar: {
+    width: '1500px',
+    margin: '0 auto',
+  },
+
   //Navigation elements
   navigationTypography: {
     color: '#ffffff',
@@ -91,6 +97,15 @@ const useStyles = makeStyles({
   },
 
   //<<<<<<<<<<<<<<<<<<<< Responsive scale
+
+  //1516px
+  ['@media (max-width: 1516px)']: {
+    //Width limit div
+    toolBar: {
+      width: '100%',
+    },
+  },
+
   //1200 px
   ['@media (max-width: 1200px)']: {
     //Navigation elements

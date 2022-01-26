@@ -31,15 +31,8 @@ function NavigationBar() {
     function changeWidth() {
       setScreenW(window.innerWidth);
     }
-
     window.addEventListener('resize', changeWidth);
-
-    return () => {
-      window.removeEventListener('resize', changeWidth);
-    };
-  }, []);
-
-  useEffect(() => {
+    //
     function changeBgScroll() {
       if (window.scrollY === 0) {
         setBackgroundColor('#ffffff00');
@@ -47,10 +40,10 @@ function NavigationBar() {
         setBackgroundColor('#13162ff3');
       }
     }
-
     window.addEventListener('scroll', changeBgScroll);
 
     return () => {
+      window.removeEventListener('resize', changeWidth);
       window.removeEventListener('scroll', changeBgScroll);
     };
   }, []);
@@ -67,7 +60,7 @@ function NavigationBar() {
             }}
             elevation={0}
           >
-            <Toolbar>
+            <Toolbar className={classes.toolBar}>
               <div className={classes.logo}>
                 <Image src={logo} alt="Logo" />
               </div>
