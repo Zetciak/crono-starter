@@ -4,6 +4,7 @@ import BuySellCrox from '../components/BuySellCrox';
 import Tiers from '../components/Tiers';
 import ApplicationsTable from '../components/ApplicationsTable';
 import DepositTable from '../components/DepositTable';
+import Verification from '../components/Verification';
 import Head from 'next/head';
 
 //CSS
@@ -17,13 +18,16 @@ function HomePage() {
       <Head>
         <title>CronoStarter - Index page</title>
       </Head>
-      <div className={classes.mainFirstGrid}>
-        <TotalCroxPower />
-        <BuySellCrox />
+      <div className="container">
+        <div className={classes.mainFirstGrid}>
+          <TotalCroxPower />
+          <BuySellCrox />
+        </div>
+        <Tiers />
+        <ApplicationsTable />
+        <DepositTable />
       </div>
-      <Tiers />
-      <ApplicationsTable />
-      <DepositTable />
+      <Verification />
     </>
   );
 }
