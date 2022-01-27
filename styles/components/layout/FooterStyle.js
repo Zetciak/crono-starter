@@ -443,6 +443,10 @@ const useStyles = makeStyles({
     applyBtn: {
       width: '40%',
     },
+
+    footerDiv: {
+      height: '1010px',
+    },
   },
 
   //420px
