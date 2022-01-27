@@ -207,7 +207,9 @@ function Footer() {
           </div>
           <div className={classes.bottomFooterSection}>
             <div className={classes.leftBottomFooterSection}>
-              <div className={classes.linkText}>{bottomLeftLinksList}</div>
+              <div className={classes.bottomLinkText}>
+                {bottomLeftLinksList}
+              </div>
             </div>
             <div className={classes.rightBottomFooterSection}>
               {bottomRightIconsList}

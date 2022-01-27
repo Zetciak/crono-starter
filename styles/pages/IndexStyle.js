@@ -22,6 +22,10 @@ const useStyles = makeStyles((theme) => ({
       width: '100%',
       flexDirection: 'column',
     },
+
+    footerMarginTop: {
+      height: '40px',
+    },
   },
 }));
 
