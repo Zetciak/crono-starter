@@ -5,7 +5,14 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     width: '1024px',
     margin: '0 auto',
-    marginTop: '148px',
+    marginTop: '30px',
+  },
+
+  footerMarginTop: {
+    height: '214px',
+    width: '1000rem',
+    marginLeft: '-250rem',
+    background: '#070b25',
   },
 
   //<<<<<<<<<<<<<<<<<<<< Responsive scale
@@ -19,5 +26,3 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default useStyles;
-
-///OD GÓRY W SENSIE > 1440PX COS ZROBIC ZE NA BOKI BARDZIEJ OK?

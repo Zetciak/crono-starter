@@ -28,6 +28,7 @@ function HomePage() {
         <DepositTable />
       </div>
       <Verification />
+      <div className={classes.footerMarginTop}></div>
     </>
   );
 }

@@ -1,6 +1,12 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
+  //Bottom margin
+  navMargin: {
+    height: '115px',
+    width: '100%',
+  },
+
   //Top nav block
   appBar: {
     position: 'fixed',

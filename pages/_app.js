@@ -5,6 +5,10 @@ const NavigationBar = dynamic(
   () => import('../components/layout/NavigationBar'),
   { ssr: false }
 );
+
+const Footer = dynamic(() => import('../components/layout/Footer'), {
+  ssr: false,
+});
 import { useEffect } from 'react';
 
 //CSS
@@ -23,8 +27,9 @@ function MyApp({ Component, pageProps }) {
     <div>
       <CssBaseline />
       <div className="portal"></div>
-      <NavigationBar></NavigationBar>
+      <NavigationBar />
       <Component {...pageProps} />
+      <Footer />
     </div>
   );
 }

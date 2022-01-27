@@ -99,6 +99,7 @@ function NavigationBar() {
           </AppBar>
         </nav>
       </header>
+      <div className={classes.navMargin}></div>
     </>
   );
 }

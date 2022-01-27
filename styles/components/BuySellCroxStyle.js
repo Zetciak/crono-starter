@@ -184,6 +184,13 @@ const useStyles = makeStyles((theme) => ({
       height: '48px',
       color: 'rgba(255, 255, 255, 0.88)',
 
+      fontFamily: "'Manrope', sans-serif",
+      fontStyle: 'normal',
+      fontWeight: '400',
+      fontSize: '16px',
+      lineHeight: '24px',
+      color: '#fff',
+
       //Right arrows hide
       '&[type=number]': {
         '-moz-appearance': 'textfield',
