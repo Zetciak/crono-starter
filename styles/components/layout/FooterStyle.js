@@ -199,6 +199,41 @@ const useStyles = makeStyles({
     float: 'left',
   },
 
+  bottomFooterSection: {
+    marginTop: '70px',
+    height: '20px',
+  },
+
+  bottomLinksTexts: {
+    marginRight: '39px',
+    '&:last-child': {
+      marginRight: '0px',
+    },
+  },
+
+  leftBottomFooterSection: {
+    float: 'left',
+  },
+
+  rightBottomFooterSection: {
+    float: 'right',
+  },
+
+  bottomLinksIcon: {
+    opacity: '1.0',
+    transition: 'opacity .5s',
+    '&:hover': {
+      opacity: '0.8',
+    },
+  },
+
+  bottomLinksIcon: {
+    marginRight: '34px',
+    '&:last-child': {
+      marginRight: '0px',
+    },
+  },
+
   //<<<<<<<<<<<<<<<<<<<< Responsive scale
   //1440px
   ['@media (max-width: 1440px)']: {

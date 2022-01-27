@@ -10,6 +10,10 @@ import Link from 'next/link';
 
 //Images
 import logo from '../../public/images/logo.svg';
+import discord from '../../public/images/discord-fill.svg';
+import medium from '../../public/images/medium-fill.svg';
+import telegram from '../../public/images/telegram-fill.svg';
+import twitter from '../../public/images/twitter-fill.svg';
 
 //Icons
 import ArrowForwardIosRoundedIcon from '@material-ui/icons/ArrowForwardIosRounded';
@@ -78,6 +82,52 @@ function Footer() {
           {rightLinks[i].title}
         </a>
       </div>
+    );
+  }
+
+  //Bottom left footer links
+  const bottomLeftLinks = [
+    { title: 'Terms & Conditions', href: 'https://www.google.pl' },
+    { title: 'Privacy Policy', href: 'https://www.google.pl' },
+  ];
+
+  const bottomLeftLinksList = [];
+
+  for (let i = 0; i < bottomLeftLinks.length; i++) {
+    bottomLeftLinksList.push(
+      <a
+        key={i}
+        target="_blank"
+        rel="noreferrer"
+        href={bottomLeftLinks[i].href}
+        className={classes.bottomLinksTexts}
+      >
+        {bottomLeftLinks[i].title}
+      </a>
+    );
+  }
+
+  //Bottom right footer icons
+  const bottomRightIcons = [
+    { icon: telegram, href: 'https://telegram.org', alt: 'Telegram' },
+    { icon: twitter, href: 'https://twitter.com/home', alt: 'Twitter' },
+    { icon: medium, href: 'https://medium.com', alt: 'Medium' },
+    { icon: discord, href: 'https://discord.com', alt: 'Discord' },
+  ];
+
+  const bottomRightIconsList = [];
+
+  for (let i = 0; i < bottomRightIcons.length; i++) {
+    bottomRightIconsList.push(
+      <a
+        key={i}
+        target="_blank"
+        rel="noreferrer"
+        href={bottomRightIcons[i].href}
+        className={classes.bottomLinksIcon}
+      >
+        <Image src={bottomRightIcons[i].icon} alt={bottomRightIcons[i].alt} />
+      </a>
     );
   }
 
@@ -153,6 +203,14 @@ function Footer() {
                 </Typography>
                 {rightLinksList}
               </div>
+            </div>
+          </div>
+          <div className={classes.bottomFooterSection}>
+            <div className={classes.leftBottomFooterSection}>
+              <div className={classes.linkText}>{bottomLeftLinksList}</div>
+            </div>
+            <div className={classes.rightBottomFooterSection}>
+              {bottomRightIconsList}
             </div>
           </div>
         </div>
