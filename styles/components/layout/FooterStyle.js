@@ -136,10 +136,13 @@ const useStyles = makeStyles({
     minWidth: '40px',
     width: '40px',
     marginRight: '10px',
+    opacity: '1.0',
+    transition: 'opacity .5s',
 
     '&:hover': {
       backgroundColor: 'rgba(255, 255, 255, 0.00)',
       boxShadow: 'none',
+      opacity: '0.8',
     },
 
     '& span': {
@@ -179,6 +182,12 @@ const useStyles = makeStyles({
     marginBottom: '20px',
     '&:last-child': {
       marginBottom: '0px',
+    },
+
+    opacity: '1.0',
+    transition: 'opacity .5s',
+    '&:hover': {
+      opacity: '0.8',
     },
   },
 
@@ -223,6 +232,11 @@ const useStyles = makeStyles({
     '&:last-child': {
       marginRight: '0px',
     },
+    opacity: '1.0',
+    transition: 'opacity .5s',
+    '&:hover': {
+      opacity: '0.8',
+    },
   },
 
   leftBottomFooterSection: {
@@ -236,13 +250,10 @@ const useStyles = makeStyles({
   bottomLinksIcon: {
     opacity: '1.0',
     transition: 'opacity .5s',
+    marginRight: '34px',
     '&:hover': {
       opacity: '0.8',
     },
-  },
-
-  bottomLinksIcon: {
-    marginRight: '34px',
     '&:last-child': {
       marginRight: '0px',
     },
