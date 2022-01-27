@@ -2,6 +2,7 @@
 import { Button, Typography } from '@material-ui/core';
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 
 //CSS
 import useStyles from '../styles/pages/404Style';
@@ -23,9 +24,11 @@ function Custom404() {
             Oh, no! This page does not exist.
           </Typography>
           <div className={classes.buttonDiv}>
-            <Button variant="contained" className={classes.stakeBtn}>
-              <Typography>Go to main page</Typography>
-            </Button>
+            <Link href="/" passHref>
+              <Button variant="contained" className={classes.stakeBtn}>
+                <Typography>Go to main page</Typography>
+              </Button>
+            </Link>
           </div>
           <div className={classes.imageDiv}>
             <Image src={errorImage} alt="" />
